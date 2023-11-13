@@ -1,6 +1,6 @@
 # About
 
-I made ad skipper this because of YouTube's new policy of disabling video playback when you have an ad blocker enabled. This doesn't block ads it just skips them.
+I made this ad skipper because of YouTube's new policy of disabling video playback when you have an ad blocker enabled. This doesn't block in-video ads from loading, it just skips them.
 
 # Features
 
