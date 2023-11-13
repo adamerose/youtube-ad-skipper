@@ -23,10 +23,10 @@ document.addEventListener("readystatechange", (event) => {
     }
 
     // Use these to determine extension flow
-    const muteButton = document.querySelector("ytp-mute-button");
+    const muteButton = document.querySelector(".ytp-mute-button");
     const videoElement = document.querySelector("video");
-    const adElement = document.querySelector("ytp-ad-player-overlay");
-    const skipButton = document.querySelector("ytp-ad-skip-button-container");
+    const adElement = document.querySelector(".ytp-ad-player-overlay");
+    const skipButton = document.querySelector(".ytp-ad-skip-button-container");
 
     // This includes the inline ad on the homepage and search results page
     document.querySelector("ytd-ad-slot-renderer")?.remove();
