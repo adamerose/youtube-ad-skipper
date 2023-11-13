@@ -1,10 +1,6 @@
-[https://chrome.google.com/webstore/devconsole](https://chrome.google.com/webstore/devconsole)
-
-[https://chrome.google.com/u/1/webstore/devconsole/eeaab142-baa5-47a3-86ef-4da17e4b6703](https://chrome.google.com/u/1/webstore/devconsole/eeaab142-baa5-47a3-86ef-4da17e4b6703)
-
 # About
 
-I made ad skipper this because of YouTube's new policy of disabling video playback if you have an ad blocker enabled. This doesn't block ads it just skips them.
+I made ad skipper this because of YouTube's new policy of disabling video playback when you have an ad blocker enabled. This doesn't block ads it just skips them.
 
 ## Features
 
@@ -15,13 +11,13 @@ I made ad skipper this because of YouTube's new policy of disabling video playba
 
 ```
 # INITIAL SETUP
-# Build the extension
-zip -r youtube-ad-skipper.zip youtube-ad-skipper/
-
-# Go to chrome://extensions/ -> Click Load Unpacked -> Select this project as folder
+git clone https://github.com/adamerose/youtube-ad-skipper
+cd youtube-ad-skipper
+Open chrome://extensions/ -> Click Load Unpacked -> Select this project as folder
 
 # UPDATING
-# git pull
+git pull
+Open chrome://extensions/ -> Click the refresh button on YouTube Ad Skipper card
 ```
 
 ![image](./screenshot.png)

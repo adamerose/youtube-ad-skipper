@@ -25,7 +25,9 @@ document.addEventListener("readystatechange", (event) => {
     const adElement = document.querySelector(".ytp-ad-player-overlay");
     const muteButton = document.querySelector(".ytp-mute-button");
     const videoElement = document.querySelector("video");
-    const skipAdButton = document.querySelector("[class*='ytp-ad-skip']");
+    const skipAdButton = document.querySelector(
+      ".ytp-ad-skip-button-container"
+    );
 
     // console.log({
     //   adModule,
