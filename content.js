@@ -29,6 +29,11 @@ document.addEventListener("readystatechange", (event) => {
       ".ytp-ad-skip-button-container"
     );
 
+    // This is the inline ad on the homepage in the top left that looks like a video thumbnail
+    document
+      .querySelector("ytd-rich-item-renderer ytd-ad-slot-renderer")
+      ?.remove();
+
     // console.log({
     //   adModule,
     //   muteButton,
