@@ -10,12 +10,16 @@ I made this ad skipper because of YouTube's new policy of disabling video playba
 
 # Run Locally
 
+## Initial Setup
+
 ```
-# INITIAL SETUP
 git clone https://github.com/adamerose/youtube-ad-skipper
 chrome://extensions/ -> Enabled Developer Mode -> Load Unpacked -> Select this project as folder
+```
 
-# UPDATING
+## Updating
+
+```
 cd /path/to/youtube-ad-skipper
 git pull
 chrome://extensions/ -> Click the refresh button on YouTube Ad Skipper card
