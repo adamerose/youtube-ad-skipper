@@ -46,7 +46,7 @@ document.addEventListener("readystatechange", (event) => {
         // videoElement.muted should usually be true if mutedByExtension is true, unless the user unmuted during the ad
         if (videoElement.muted) {
           muteButton.click();
-          console.log("Detected no ad and video was unmuted. Unmuting now...");
+          console.log("Detected no ad audio. Unmuting now...");
         }
         mutedByExtension = false;
       }
@@ -55,7 +55,7 @@ document.addEventListener("readystatechange", (event) => {
 
     // Always try to skip the ad if the button is available
     if (skipButton) {
-      console.log("Detected ytp-ad-skip-button. Clicking it now...");
+      console.log("Detected ytp-ad-skip-button. Clicking to skip now...");
       skipButton.click();
     }
 
@@ -66,6 +66,11 @@ document.addEventListener("readystatechange", (event) => {
         console.log("Detected ad and video was unmuted. Muting now...");
         muteButton.click();
         mutedByExtension = true;
+      }
+
+      // Try skipping the video. Does this work??
+      if (videoElement.duration > videoElement.currentTime) {
+        videoElement.currentTime = videoElement.duration;
       }
     }
   }, 100);
