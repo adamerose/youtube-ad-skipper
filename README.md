@@ -17,6 +17,8 @@ git clone https://github.com/adamerose/youtube-ad-skipper
 chrome://extensions/ -> Enabled Developer Mode -> Load Unpacked -> Select this project as folder
 ```
 
+`chrome://extensions/`
+
 ## Updating
 
 ```

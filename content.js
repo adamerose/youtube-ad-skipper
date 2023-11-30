@@ -70,6 +70,7 @@ document.addEventListener("readystatechange", (event) => {
 
       // Try skipping the video. Does this work??
       if (videoElement.duration > videoElement.currentTime) {
+        console.log("Skipping to end of ad...");
         videoElement.currentTime = videoElement.duration;
       }
     }
